@@ -7,7 +7,27 @@
     <title>Luka | JavaScript Mastery Portfolio</title>
   </head>
   <body>
-    <div id="root">hello</div>
+    <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+
+
+      <!-- Root element where React will render your app -->
+      <div id="root"></div>
+
+      <!-- Load React and ReactDOM from CDN -->
+      <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+      <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  
+      <!-- Load Babel to transpile JSX in the browser (not recommended for production) -->
+      <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  
+      <!-- Load your App.jsx file from the src folder -->
+      <script type="text/babel" src="./src/App.jsx"></script>
+  
+      <!-- Render your React app -->
+      <script type="text/babel">
+          ReactDOM.render(<App />, document.getElementById('root'));
+      </script>
   </body>
 </html>
